@@ -1,0 +1,24 @@
+<?php
+
+$name = $_POST["name"];
+$email = $_POST["email"];
+$message = $_POST["message"];
+
+echo "<!DOCTYPE html>";
+echo "<html>";
+echo "<head>";
+echo "<title>Message Sent</title>";
+echo "</head>";
+echo "<body>";
+
+echo "<h1>Thank You!</h1>";
+echo "<p>Your message has been received.</p>";
+
+echo "<p><strong>Name:</strong> " . htmlspecialchars($name) . "</p>";
+echo "<p><strong>Email:</strong> " . htmlspecialchars($email) . "</p>";
+echo "<p><strong>Message:</strong> " . htmlspecialchars($message) . "</p>";
+
+echo "</body>";
+echo "</html>";
+
+?>
